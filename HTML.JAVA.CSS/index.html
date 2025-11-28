@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlockChain Demo CREST Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>MiniChain: ECDSA-Secured Blockchain Prototype</h1>
+        <p class="subtitle">
+            Simple demo interface for our Gold CREST project. This page lets you enter a mock patient record
+            and simulates hashing it into a "block".
+        </p>
+
+        <section class="card">
+            <h2>Add a record</h2>
+            <form id="record-form">
+                <label for="patient-id">Patient ID</label>
+                <input type="text" id="patient-id" required>
+
+                <label for="record-data">Record details</label>
+                <textarea id="record-data" rows="4" required
+                    placeholder="E.g. Prescription, lab result, diagnosis summary"></textarea>
+
+                <button type="submit">Add to demo chain</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Demo chain</h2>
+            <div id="chain-output" class="chain-output">
+                <p>No blocks yet. Add a record above.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
